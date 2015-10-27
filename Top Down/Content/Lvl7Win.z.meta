@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Lvl7Win",
+		uint64 ResourceId = 56001927a4b8335c,
+	},
+},

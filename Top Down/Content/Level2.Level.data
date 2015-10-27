@@ -1,0 +1,6696 @@
+Level = 
+{
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 0,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			float Drag = 0.699999988,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 1,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Camera = 
+			{
+				string Path = ":/Camera",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
+		},
+		GridDraw = 
+		{
+			bool Active = true,
+			bool HalfCellOffset = false,
+			float CellSize = 1,
+			GridAxis Axis = ZAxis,
+			int Lines = 100,
+			bool DrawAxisOrigins = true,
+			bool AlwaysDrawInEditor = true,
+			bool DrawInGame = false,
+			Vec4 GridColor = [0.5, 0.5, 0.5, 0.400000006],
+			Vec4 GridHiLight = [0, 0, 0, 0.400000006],
+			int HilightInterval = 10,
+			bool FollowEditorCamera = false,
+		},
+		NextLevel = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-75.0137711, 35.1227913, 49.9999962],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 9.07181931,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [-75.0137711, 35.1227913, -3.51939548e-006],
+			float MoveSensitivity = 1,
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
+			bool DrawNonVisible = true,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool Wireframe = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		Archetyped = 
+		{
+			string Name = "561c127cd9cd31b7:Lvl2Floor",
+		},
+		EditorFlags = 
+		{
+			bool Locked = false,
+			bool Hidden = true,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-30, 30, -2],
+			Vec3 Scale = [7.5, 7.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c126de58f2021:Snow2",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c127cd9cd31b7:Lvl2Floor",
+				LinkId = 
+				{
+					uint Id = 5,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [6.65263176, 0, -2],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2 Floor",
+				},
+				EditorFlags = 
+				{
+					bool Locked = false,
+					bool Hidden = true,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c127cd9cd31b7:Lvl2Floor",
+				LinkId = 
+				{
+					uint Id = 6,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [6.66666698, -6.66666698, -5],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2 Floor",
+				},
+				EditorFlags = 
+				{
+					bool Locked = false,
+					bool Hidden = true,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c127cd9cd31b7:Lvl2Floor",
+				LinkId = 
+				{
+					uint Id = 7,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, -6.66666698, -2],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2 Floor",
+				},
+				EditorFlags = 
+				{
+					bool Locked = false,
+					bool Hidden = true,
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Lvl2 Floor",
+		},
+		Archetyped = 
+		{
+			string Name = "561c127cd9cd31b7:Lvl2Floor",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -1],
+			Vec3 Scale = [0.820323706, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.0500000715, 1, 0, 0.5],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c126de58f2021:Snow2",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Win",
+		},
+		Archetyped = 
+		{
+			string Name = "561c127cd9cd31b7:Lvl2Floor",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-12.6330862, 35.8914299, 0],
+			Vec3 Scale = [0.43862012, 0.259276181, 0.43862012],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.0415000319, 0.829999983, 0.167660087, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c126de58f2021:Snow2",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [4, 4, 0.5],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "Left/Right",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-49, -40, 0],
+			Vec3 Scale = [0.409362018, 3.24423289, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 11,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-3.81469727e-005, 24.6591415, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 12,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 24.6591415, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 13,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-3.81469727e-005, 9.863657, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 14,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-3.81469727e-005, 4.9318285, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 15,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 19.7273121, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 16,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 4.9318285, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 17,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-3.81469727e-005, 19.7273121, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 18,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 2.86102295e-006, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 19,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 14.7954836, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 20,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.396896, 9.863657, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 21,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-3.81469727e-005, 14.7954836, 0],
+					Vec3 Scale = [1, 0.999999762, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Named = 
+		{
+			string Name = "Top/Bottom",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-24.1578846, -48.9947891, 0],
+			Vec3 Scale = [0.409360379, 3.31714082, 1],
+			Quat Rotation = [0, 0, 0.702766895, 0.711420178],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 23,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [240.171326, 0.362730503, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 24,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.850631714, -9.64629078, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 0.5, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 25,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.425292969, -4.82314587, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 26,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [1.18136883, -14.4695778, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 27,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [241.021942, -9.28356075, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 28,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [241.87262, -18.9298496, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 29,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [240.596664, -4.46041536, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 30,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-0.425331116, 4.82314634, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 31,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [239.745987, 5.18587637, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 32,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [241.447266, -14.1067047, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 33,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [1.70128632, -19.2925797, 0],
+					Vec3 Scale = [0.99999994, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 34,
+		},
+		Named = 
+		{
+			string Name = "Character",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-72.9833984, 35.0825958, 0.000194175576],
+			Vec3 Scale = [0.441285998, 0.535953999, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561bfa25fd1c3787:Player",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Movement = 
+		{
+			float Speed = 0.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [1.5, 0.75, 0.5],
+		},
+		Lvl2Win = 
+		{
+		},
+		Lvl2Death = 
+		{
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 10,
+			string Text = "",
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		DeathCounter2 = 
+		{
+		},
+		Death = 
+		{
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 2,
+				},
+				Named = 
+				{
+					string Name = "Camera",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, -0.160799488, 40],
+					Vec3 Scale = [2.26610398, 1.86583173, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Camera = 
+				{
+					ProjectionMode ProjectionMode = Orthographic,
+					Facing Facing = NegativeZ,
+					CameraTransparentSort TransparentSort = InheritFromSpace,
+					float FieldOfView = 45,
+					float NearPlane = 0.5,
+					float FarPlane = 200,
+					float Size = 7,
+				},
+				SoundListener = 
+				{
+					bool Active = true,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 35,
+				},
+				Named = 
+				{
+					string Name = "Death",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-1.59843397, 0.315668821, 4.99958086],
+					Vec3 Scale = [1.29231822, 1.0640502, 0.570281982],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string FontName = "4e7bac697bec55c5:Verdana",
+					uint FontSize = 30,
+					string Text = "Sprite Text...",
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+				},
+				DeathCounter2 = 
+				{
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 36,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Wall",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.10353708, -0.531498432, 0],
+			Vec3 Scale = [0.417475313, 2.52363873, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 37,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.82941246, 0.0221615434, 0],
+					Vec3 Scale = [1, 1.00888681, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 38,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Wall",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2, -15.5, 0],
+			Vec3 Scale = [0.417475313, 2.52363873, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 39,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-93.1791611, -3.7644062, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 40,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-103.000099, -10.2639761, 0],
+					Vec3 Scale = [1, 1.11174679, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 41,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-48.1465607, -7.89708233, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 42,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-80.2442627, -11.6894712, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 43,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.1628094, -5.15129185, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 44,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-51.5000496, 2.17939258, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 45,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-66.8302994, -8.51944447, 0],
+					Vec3 Scale = [0.165425926, 3.90022993, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 46,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-38.565155, -0.792506695, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 47,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-65.8721542, -10.0648336, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 48,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, -5.15129185, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 49,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-93.1791611, -1.58501291, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 50,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.58140373, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 51,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-48.1465607, -2.37751961, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 52,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-93.1791611, -8.71757126, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 53,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-103.000099, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 54,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, -10.3025846, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 55,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-57.4884262, -3.96253204, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 56,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-103.000099, -4.95316601, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 57,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-86.2374573, 2.17939258, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 58,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-61.0814514, 0.554754257, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 59,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-70.6628571, -0.990633011, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 60,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.7442131, -5.15129185, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 61,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-82.6396179, 2.17939258, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 62,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.58140373, -9.51007748, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 63,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.58140373, -5.15129185, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 64,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-38.565155, -9.51007748, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 65,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-83.5977554, -3.17002583, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 66,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-83.5977554, -7.13255787, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 67,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-74.2558823, -5.54754543, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 68,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-74.2558823, -4.71893787, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 69,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-57.4884262, -6.34005165, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 70,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.7442131, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 71,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.1628094, -9.51007748, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 72,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-56.2907524, -11.6894712, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 73,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-75.4535599, 0.552865982, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 74,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-69.6130371, -2.58108807, 0],
+					Vec3 Scale = [0.165425926, 1.91496789, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 75,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-82.6396179, 2.17939258, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 76,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-70.6955795, -10.0648336, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 77,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-38.565155, -5.94379902, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 78,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-48.1465607, -7.52881145, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 79,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.7442131, -10.3025846, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 80,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.1628094, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 81,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-18.0624046, 3.78620052, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 82,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-49.0268517, 3.78620052, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 83,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-80.0534897, 3.78620052, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 84,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-89.9397278, 3.78620052, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 85,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-94.6652374, 5.3702116, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 86,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-63.7007828, 5.3702116, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 87,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-32.7985153, 5.3702116, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 88,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-22.7879219, 5.3702116, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 89,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-18.2489548, 6.96450901, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 90,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-18.2489548, 6.96450901, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 91,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-49.2755775, 6.96450901, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 92,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-79.9291382, 6.96450901, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 93,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-90.1691589, 6.96450901, 0],
+					Vec3 Scale = [0.165425926, 6.04500055, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 94,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-62.1431808, -4.19167423, 0],
+					Vec3 Scale = [0.165425926, 1.91496789, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 95,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-69.6130371, -5.78837538, 0],
+					Vec3 Scale = [0.165425926, 1.91496789, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 96,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-62.2271118, -7.35730743, 0],
+					Vec3 Scale = [0.165425926, 1.91496789, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 97,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-62.2271118, -7.89879704, 0],
+					Vec3 Scale = [0.165425926, 1.91496789, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 98,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Wall",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.03207588, 14.5598307, 0],
+			Vec3 Scale = [0.417475313, 2.54606581, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 99,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-80.1634293, 11.8744707, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 100,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.76639748, 0, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 101,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-95.9270172, -2.89504766, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 102,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-57.651722, -2.96265268, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 103,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-47.8252106, -4.14573193, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 104,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-102.672386, 0.800692081, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 105,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-32.554657, 2.13517952, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 106,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-76.7550125, -2.98518705, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 107,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-86.3066559, -4.15699816, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 108,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-59.9613609, 9.76877403, 0],
+					Vec3 Scale = [1, 0.972097158, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 109,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-38.5484352, -2.92885065, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 110,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-84.2800674, 8.80747318, 0],
+					Vec3 Scale = [0.163968772, 3.12595797, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 111,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.6795187, -4.18464756, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 112,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-37.8010368, 8.73963451, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 113,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-98.1721115, -1.79110932, 0],
+					Vec3 Scale = [1, 0.303230137, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 114,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-87.2716522, 5.64468193, 0],
+					Vec3 Scale = [0.163968757, 2.23800755, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 115,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-59.3485451, 11.8744707, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 116,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-69.52948, 8.1983242, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 117,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-88.7480316, 1.60636282, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 118,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-38.3482475, -0.186099052, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 119,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.0470886, -2.15570879, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 120,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-58.0394669, -1.4314723, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 121,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.7839394, -1.4314723, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 122,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-78.1531143, 7.2523613, 0],
+					Vec3 Scale = [0.163968772, 3.12595797, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 123,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-40.4316025, 4.87704849, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 124,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [4.76837158e-007, 10.2242203, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 125,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [4.76837158e-007, 10.6553621, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 126,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-50.5482559, 1.38221836, 0],
+					Vec3 Scale = [1, 0.460116476, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 127,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-78.730484, -1.80237675, 0],
+					Vec3 Scale = [1, 0.305591166, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 128,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-67.2720718, -4.21333599, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 129,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-30.8634758, 5.86383104, 0],
+					Vec3 Scale = [1, 0.368867427, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 130,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-48.0250778, -1.4314723, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 131,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-81.6741791, 10.3744059, 0],
+					Vec3 Scale = [0.163968772, 5.45429564, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 132,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-79.103157, 2.3784132, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 133,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-50.2515259, 4.06508636, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 134,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-30.8634758, 7.57970381, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 135,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-59.9652977, 0.697335243, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 136,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-102.672386, 9.77254963, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 137,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-66.0729294, 4.45917225, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 138,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.3764267, -2.96265316, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 139,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-40.4316025, 6.8450222, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 140,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [4.76837158e-007, 5.13264084, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 141,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-93.4325867, 6.64857864, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 142,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.7906418, -4.19080162, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 143,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-59.4748497, -2.15570879, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 144,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-32.4294548, 3.63391113, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 145,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-93.6843796, 2.34105492, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 146,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-63.5019112, 6.04180908, 0],
+					Vec3 Scale = [0.163968757, 4.87350941, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 147,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-40.4316025, 6.45968437, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 148,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-95.9270172, -2.89504766, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 149,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-27.7355614, 10.3381433, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 150,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-89.6505051, -2.15570879, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 151,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.76639748, 5.83068085, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 152,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-28.0791473, 11.8930464, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 153,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.5327911, 6.5697813, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 154,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-50.6711769, 8.20746613, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 155,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-69.6861115, 2.31614971, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 156,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-87.4581757, 5.25723171, 0],
+					Vec3 Scale = [0.163968757, 2.28652215, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 157,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-9.76639748, 9.73148823, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 158,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-69.6861115, 1.63126707, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 159,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-86.3066559, -4.15699816, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 160,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-102.672386, 5.9333334, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 161,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-32.2779007, 0.524205685, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 162,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-19.0508499, -0.158423901, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 163,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-72.2962265, 6.71961594, 0],
+					Vec3 Scale = [0.163968742, 1.4177587, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 164,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-102.72998, -2.94011712, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 165,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-99.3628616, -2.90631533, 0],
+					Vec3 Scale = [1, 0.322121918, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 166,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Wall",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.08324623, 12.494977, 0],
+			Vec3 Scale = [0.417475313, 2.54606581, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 167,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [59.9886398, 13.6381969, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 168,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [46.6053085, 0.16409111, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 169,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 10.5830202, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 170,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [13.5697136, -2.91195822, 0],
+					Vec3 Scale = [0.163968772, 4.90122509, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 171,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [27.5293522, 6.42687893, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 172,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [18.1665382, -4.55082989, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 173,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.41008, 1.80177546, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 174,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [45.1858292, 6.61957359, 0],
+					Vec3 Scale = [1, 0.563488305, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 175,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [64.4181137, 3.17615223, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 176,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [80.4432983, -4.55082989, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 177,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [37.4161034, 3.3519125, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 178,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.2088318, 13.5969105, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 179,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [22.5774231, 11.1747875, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 180,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [42.9805336, -2.91195822, 0],
+					Vec3 Scale = [0.163968772, 4.66763163, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 181,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [65.5879059, 10.058423, 0],
+					Vec3 Scale = [0.163968772, 3.21851158, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 182,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [49.220993, -4.55082989, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 183,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [18.2130146, 9.57838917, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 184,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [22.6613579, 8.03703976, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 185,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [10.5319748, 1.7455492, 0],
+					Vec3 Scale = [0.163968772, 4.21126652, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 186,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.5779495, 4.92576218, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 187,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [102.044861, 8.05317593, 0],
+					Vec3 Scale = [0.163968772, 3.42301702, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 188,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [50.4205093, 10.6380682, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 189,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [8.24320793, 3.33920574, 0],
+					Vec3 Scale = [0.163968772, 3.17035198, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 190,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [65.5879059, 10.058423, 0],
+					Vec3 Scale = [0.163968772, 3.21851158, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 191,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 4.67910004, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 192,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [41.7449074, 1.7455492, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 193,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [60.1072083, 2.54172182, 0],
+					Vec3 Scale = [0.163968772, 1.11497092, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 194,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [94.6977386, 8.49013519, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 195,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [69.5567703, 12.3170395, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 196,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [46.6053085, 0.16409111, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 197,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [105.306732, -2.91195822, 0],
+					Vec3 Scale = [0.163968772, 5.25167465, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 198,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.3261566, 0.16409111, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 199,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [87.252243, -1.42981958, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 200,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [61.2875748, 8.45869064, 0],
+					Vec3 Scale = [0.163968772, 3.17035198, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 201,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [80.6131287, 6.52565384, 0],
+					Vec3 Scale = [0.163968772, 3.17035198, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 202,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [13.5697136, 0.16409111, 0],
+					Vec3 Scale = [0.163968772, 4.90122509, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 203,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [101.943039, 6.44218349, 0],
+					Vec3 Scale = [0.163968772, 3.42301702, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 204,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [96.7120743, 3.41193581, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 205,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [55.0367126, 6.289258, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 206,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [6.86887026, 4.86030769, 0],
+					Vec3 Scale = [0.163968772, 1.93000925, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 207,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [68.5112839, 11.5728359, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 208,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [73.0337753, 6.87594891, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 209,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [95.0472794, -4.55082989, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 210,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [74.2505112, 3.97310734, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 211,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [22.5774231, 12.7574253, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 212,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [107.745346, 13.6244335, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 213,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [4.36440706, 6.42687893, 0],
+					Vec3 Scale = [0.163968772, 1.11497092, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 214,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [51.1619453, -1.42981958, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 215,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.8297424, 8.49013519, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 216,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [96.0649872, -1.42981958, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 217,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [15.164547, -1.42981958, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 218,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [72.8723679, -2.91195822, 0],
+					Vec3 Scale = [0.163968772, 5.25167465, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 219,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [40.7904472, 10.6380682, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 220,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [94.6118927, 10.0399332, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 221,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [98.4290161, 12.3170395, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 222,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [96.8102188, 11.6272984, 0],
+					Vec3 Scale = [0.163968772, 3.21851158, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 223,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [32.0744934, 4.8298893, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 224,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [77.9954758, 0.16409111, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 225,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [88.776947, 13.6244335, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 226,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [69.5567703, 12.3170395, 0],
+					Vec3 Scale = [1, 0.336940885, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 227,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Wall",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.09173965, -13.5338135, 0],
+			Vec3 Scale = [0.417475313, 2.54606581, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 228,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.7283478, -2.16840649, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 229,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [84.7406464, 4.10761547, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 230,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [65.544014, -9.1870575, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 231,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [22.3195724, -12.3385677, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 232,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [57.2409019, -8.75593567, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 233,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [41.6236954, -9.1870575, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 234,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [93.0203094, -8.21565819, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 235,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [44.0577049, -10.7284069, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 236,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [27.3413849, -0.55620718, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 237,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-4.76837158e-007, -5.91490221, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 238,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [38.0207176, -8.71465111, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 239,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [36.9235611, -6.88879251, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 240,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [58.3225784, -0.55620718, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 241,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [102.672363, -6.71559477, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 242,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [43.9450951, 2.53130555, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 243,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.3147278, -8.7696991, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 244,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [37.1737556, 0.949525833, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 245,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [47.8406372, -7.33844519, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 246,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [32.1648178, 2.53130555, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 247,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [58.3225784, -0.55620718, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 248,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.9352036, -0.55620718, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 249,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [68.1549454, 0.949525833, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 250,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.7283478, -3.77856684, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 251,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [53.4579582, -12.3385677, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 252,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.2964783, -2.16840649, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 253,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [53.5277176, 4.10761595, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 254,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [17.7873039, -3.77856684, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 255,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.7283478, -2.16840649, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 256,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [102.748299, 1.95129323, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 257,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [83.6200485, -8.27070999, 0],
+					Vec3 Scale = [1, 0.519435346, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 258,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [9.48419476, -9.3889904, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 259,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [48.9256859, -3.77856684, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 260,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [27.5232925, -5.34744215, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 261,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [93.0203094, -8.21565819, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 262,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [28.7043762, -7.35220671, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 263,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [27.3413849, -0.55620718, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 264,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [93.0203094, -8.5872364, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 265,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [70.1028595, 0.949525833, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 266,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [89.3804016, -3.77856684, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 267,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [48.5060349, -2.16840649, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 268,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [22.6945038, 4.10761595, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 269,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [102.672363, -10.1572876, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 270,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [58.4938164, -5.34744215, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 271,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [19.0805397, 1.70794272, 0],
+					Vec3 Scale = [1, 0.452589333, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 272,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [66.8929596, -7.37972975, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 273,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [70.4120102, -6.88879251, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 274,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [32.0555801, -10.7284069, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 275,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [74.9262772, 2.53130555, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 276,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [75.280014, -10.7284069, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 277,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [65.544014, -9.1870575, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 278,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-4.76837158e-007, -10.9991512, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 279,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [17.7873039, -2.16840649, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 280,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [9.48419476, -7.47606421, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 281,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [93.1014557, 0.993098736, 0],
+					Vec3 Scale = [1, 0.768058896, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 282,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [9.72081375, 1.63126779, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 283,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [102.748299, 0.830574512, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 284,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [18.9683876, -8.75593758, 0],
+					Vec3 Scale = [1, 0.892691731, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 285,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [84.7641983, -12.3385677, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 286,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [79.9801407, -5.34744215, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 287,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [68.145874, -6.88879251, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 288,
+				},
+				Named = 
+				{
+					string Name = "Lvl2Wall",
+				},
+				Archetyped = 
+				{
+					string Name = "561c118fe32c1470:Lvl2Wall",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [76.4610748, -8.7696991, 0],
+					Vec3 Scale = [1, 0.277540147, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string SpriteSource = "561c1ed5d96d5523:Ice",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+				},
+				RigidBody = 
+				{
+					bool Static = true,
+					bool Asleep = false,
+					bool Kinematic = false,
+					bool RotationLocked = false,
+					bool Mode2D = true,
+					bool AllowSleep = true,
+					bool Inherit2DMode = true,
+					Vec3 Velocity = [0, 0, 0],
+					Vec3 AngularVelocity = [0, 0, 0],
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = true,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [2.5, 2.54999995, 0.5],
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 289,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Spawn",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-68.9351807, 33.4802094, -3.81469727e-006],
+			Vec3 Scale = [0.417475313, 2.54606581, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		PlayerController = 
+		{
+			float RotationSpeed = 180,
+			float Speed = 10,
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "561c127cd9cd31b7:Lvl2Floor",
+				LinkId = 
+				{
+					uint Id = 290,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-11.4112244, 0.242956161, 0],
+					Vec3 Scale = [2.39535117, 0.39276281, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2 Floor",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 291,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-10.5176544, -1.51926231, 1],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "LVl2StartWall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 292,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-10.5176544, 1.74509811, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2StartWall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 293,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-20.0336456, 0, 1],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2StartWall",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 294,
+				},
+				Named = 
+				{
+					string Name = "SpriteText",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-15.8066339, 1.97320652, 1.54206532e-006],
+					Vec3 Scale = [2.26719999, 0.39276281, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string FontName = "5636c7307aca74dc:UrbanJungleDEMO",
+					uint FontSize = 30,
+					string Text = "Lvl 2 - Narrower Paths",
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 295,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-20.0336456, 0, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2StartWall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 296,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.187620163, 0, 1],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2StartWall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 297,
+		},
+		Named = 
+		{
+			string Name = "Lvl2Win",
+		},
+		Archetyped = 
+		{
+			string Name = "561c118fe32c1470:Lvl2Wall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-68.9351807, -3.95062256, -3.81469727e-006],
+			Vec3 Scale = [0.417475313, 2.54606581, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561c1ed5d96d5523:Ice",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2.5, 2.54999995, 0.5],
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 298,
+				},
+				Named = 
+				{
+					string Name = "SpriteText",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-15.1268368, 1.72361863, 1.54206532e-006],
+					Vec3 Scale = [2.39535117, 0.39276281, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string FontName = "5636c7307aca74dc:UrbanJungleDEMO",
+					uint FontSize = 30,
+					string Text = "Press 3 for Lvl 3",
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 299,
+				},
+				Named = 
+				{
+					string Name = "SpriteText",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-15.6933289, 2.10934496, 1.54206532e-006],
+					Vec3 Scale = [2.39535117, 0.39276281, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					bool VisibilityEvents = true,
+					bool CastShadows = false,
+					Vec4 Color = [1, 1, 1, 1],
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					string FontName = "5636c7307aca74dc:UrbanJungleDEMO",
+					uint FontSize = 30,
+					string Text = "You've beaten Lvl 2",
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 300,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-10.5176544, 1.74509788, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2WinWall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c127cd9cd31b7:Lvl2Floor",
+				LinkId = 
+				{
+					uint Id = 301,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-11.4112244, 0.242956638, 0],
+					Vec3 Scale = [2.39535117, 0.39276281, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2 Floor",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 302,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-10.5176544, -1.51926196, 0],
+					Vec3 Scale = [0.163968772, 6.09872103, 1],
+					Quat Rotation = [0, 0, 0.70710665, 0.707106888],
+				},
+				Named = 
+				{
+					string Name = "Lvl2WinWall",
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "561c118fe32c1470:Lvl2Wall",
+				LinkId = 
+				{
+					uint Id = 303,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-20.0336456, -1.1920929e-007, 0],
+					Vec3 Scale = [1, 0.99999994, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Named = 
+				{
+					string Name = "Lvl2WinWall",
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 304,
+		},
+		Named = 
+		{
+			string Name = "Cobble",
+		},
+		Archetyped = 
+		{
+			string Name = "561e9dd788847683:Cobble",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-72.931488, 30.7703381, -3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.564999998, 0.562174976, 0.562174976, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561e9d8087bafaa1:Cobble",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [1, 8, 0.5],
+		},
+	},
+},

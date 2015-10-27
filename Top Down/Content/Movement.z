@@ -1,0 +1,60 @@
+class Movement : ZilchComponent
+{
+    [Property]
+    var Speed : Real = 0.5;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        var movement = local Real3(0.0, 0.0, 0.0);
+        
+        //When W is down, player goes up .5
+        if(Zero.Keyboard.KeyIsDown(Keys.W))
+        {
+            movement += local Real3(0.0, 0.2, 0.0);
+            if(this.Owner.Sprite.FlipY == true)
+            {
+                this.Owner.Sprite.FlipY = false;
+            }
+            if(Zero.Keyboard.KeyIsDown(Keys.Control))
+            {
+                movement = local Real3(0.0, 0.1, 0.0);
+            }
+        }
+        //When S is down, player goes down .5
+        if(Zero.Keyboard.KeyIsDown(Keys.S))
+        {
+            movement += local Real3(0.0, -0.2, 0.0);
+            if(this.Owner.Sprite.FlipY == false)
+            {
+                this.Owner.Sprite.FlipY = true;
+            }
+            if(Zero.Keyboard.KeyIsDown(Keys.Control))
+            {
+                movement = local Real3(0.0, -0.1, 0.0);
+            }
+        }
+        //When D is down, player goes right .5
+        if(Zero.Keyboard.KeyIsDown(Keys.D))
+        {
+            movement += local Real3(0.2, 0.0, 0.0);
+            if(Zero.Keyboard.KeyIsDown(Keys.Control))
+            {
+                movement = local Real3(0.1, 0.0, 0.0);
+            }
+        }
+        //When A is down, player goes left .5
+        if(Zero.Keyboard.KeyIsDown(Keys.A))
+        {
+            movement += local Real3(-0.2, 0.0, 0.0);
+            if(Zero.Keyboard.KeyIsDown(Keys.Control))
+            {
+                movement = local Real3(-0.1, 0.0, 0.0);
+            }
+        }
+        this.Owner.Transform.Translation += movement;
+    }
+}

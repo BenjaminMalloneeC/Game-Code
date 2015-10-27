@@ -1,0 +1,38 @@
+class Collision : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        
+        Zero.Connect(this.Owner, Events.CollisionEnded, this.OnCollisionEnded);
+        
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnCollisionStarted(event : CollisionEvent)
+        {
+            var otherObject = event.OtherObject;
+            
+            if (otherObject.Name == "WinTile")
+        {
+        var orange = Real4(0.0, 2.0, 0.0, 1.0);
+        this.Owner.Sprite.Color = orange;
+        }
+    }
+    function OnCollisionEnded(event : CollisionEvent)
+    {
+        var white = Real4(1.0, 1.0, 1.0, 1.0);
+        this.Owner.Sprite.Color = white;
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if (Zero.Keyboard.KeyIsDown(Keys.Space))
+        {
+            this.Owner.Collider.SendsEvents = false;
+        }
+        else
+        {
+            this.Owner.Collider.SendsEvents = true;
+        }
+    }
+}

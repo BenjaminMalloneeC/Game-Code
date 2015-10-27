@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "UrbanJungleDEMO",
+		uint64 ResourceId = 5636c7307aca74dc,
+	},
+},

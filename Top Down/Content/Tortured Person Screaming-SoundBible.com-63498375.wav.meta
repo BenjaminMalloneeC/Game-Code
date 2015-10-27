@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "Tortured Person Screaming-SoundBible.com-63498375",
+		uint64 ResourceId = 5632e4f7a37e9676,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Decompress,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "WTeleport",
+		uint64 ResourceId = 561d2c1b6b880b46,
+	},
+},

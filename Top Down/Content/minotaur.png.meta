@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "minotaur",
+		uint64 ResourceId = 5604356ffdb91946,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 260,
+		uint FrameSizeY = 241,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 130,
+		float OriginY = 120,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

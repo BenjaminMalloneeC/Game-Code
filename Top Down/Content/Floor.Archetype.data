@@ -1,0 +1,42 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Floor",
+	},
+	Archetyped = 
+	{
+		string Name = "561e9dff906dee4b:Floor",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [60.3503609, 29.585186, -0.000999450684],
+		Vec3 Scale = [1.10000002, 1.10000002, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		bool Visible = true,
+		bool VisibilityCulling = true,
+		bool VisibilityEvents = true,
+		bool CastShadows = false,
+		Vec4 Color = [0.733333349, 0.674509823, 0.607843161, 1],
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		string SpriteSource = "561e9ddb8a6f17f5:Floor",
+		bool RenderMask = false,
+		bool FlipX = false,
+		bool FlipY = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+	},
+	Hierarchy = 
+	{
+	},
+},

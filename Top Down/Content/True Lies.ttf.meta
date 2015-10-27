@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "True Lies",
+		uint64 ResourceId = 5636c7a461c74d5c,
+	},
+},

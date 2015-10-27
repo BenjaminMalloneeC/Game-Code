@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "PAC-FONT",
+		uint64 ResourceId = 5636c6bf9e2a9f30,
+	},
+},

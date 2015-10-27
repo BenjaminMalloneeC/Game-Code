@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "InvisWall",
+		uint64 ResourceId = 5602d9a63d4bdb8c,
+	},
+},

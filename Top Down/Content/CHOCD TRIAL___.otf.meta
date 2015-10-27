@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "CHOCD TRIAL___",
+		uint64 ResourceId = 5636c76895d28318,
+	},
+},

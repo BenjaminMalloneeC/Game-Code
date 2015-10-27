@@ -1,0 +1,28 @@
+class DeathCounter4 : ZilchComponent
+{
+    var DeathsValue : Integer = 0;
+    var Deaths : String = "Deaths: 0";
+    function Initialize(init : CogInitializer)
+    {
+        this.Deaths = "Deaths: `this.DeathsValue`";
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        var test = this.Space.FindObjectByName("Death");
+        this.Owner.SpriteText.Text = "`this.Deaths`";
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.Name == "LavaWall")
+        {
+            this.DeathsValue +=1;
+            this.Deaths = "Deaths: `this.DeathsValue`";
+            Console.WriteLine("hello");
+            var test = this.Space.FindObjectByName("Death");
+            test.SpriteText.Text = "`this.Deaths`";
+        }
+    }
+}
